@@ -3,7 +3,7 @@ function! s:disable_italic()
   redir => his
   silent hi
   redir END
-  for line in filter(split(substitute(his, '\n\s\+', ' ', 'g'), "\n"), 'v:val=~"=italic"')
+  for line in filter(split(substitute(his, '\n\s\+', ' ', 'g'), "\n"), 'v:val=~"=.*italic"')
     exe 'hi' substitute(substitute(line, ' xxx ', ' ', ''), 'italic', 'none', 'g')
   endfor
 endfunction
