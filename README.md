@@ -6,6 +6,12 @@
 ### So I disable italic font
 ![](http://go-gyazo.appspot.com/30bd9041c18946b9.png)
 
+## Usage
+
+```vim
+:DisableItalic
+```
+
 ## License
 
 MIT
